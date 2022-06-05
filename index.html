@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>Aditya</title>
+<link rel="shortcut icon" href="abc.png" type="image/x-icon">
+<script>
+
+var results=''; var adi=0; 
+function one()
+{
+	var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'1';
+}
+function two()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'2';
+}
+function three()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'3';
+}
+function four()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'4';
+}
+function five()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'5';
+}
+function six()
+{
+	var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'6';
+}
+function seven()
+{
+	var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'7';
+}
+function eight()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'8';
+}
+function nine()
+{
+	var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'9';
+	
+	
+}
+function add()
+{
+	if(results!='')
+	{
+		var temp=document.getElementById('result').value;
+		var n = temp-parseFloat(results);
+		if(adi==1)
+		{
+			var m=parseFloat(temp)+ parseFloat(results);
+		}
+		else if(adi==2)
+		{
+			var m=parseFloat(results)- parseFloat(temp);
+		}
+		else if(adi==3)
+		{
+			var m=parseFloat(temp)* parseFloat(results);
+		}
+		if(adi==4)
+		{
+			var m=parseFloat(results)/ parseFloat(temp);
+		}	
+		document.getElementById('result').value=m ;
+	}
+	results=document.getElementById('result').value;	
+	document.getElementById('result').value=''; adi=1;
+	
+}
+function zero()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'0';
+}
+function point()
+{
+var a=document.getElementById('result').value;
+	document.getElementById('result').value=a+'.';
+}
+function multiply()
+{
+	results=document.getElementById('result').value;
+	adi=3;
+	
+	document.getElementById('result').value='';
+}
+function divide()
+{
+	results=document.getElementById('result').value;
+	adi=4;
+	document.getElementById('result').value='';
+}
+function subtract()
+{
+	if(results!='')
+	{
+		var temp=document.getElementById('result').value;
+		var n = temp-parseFloat(results);
+		if(adi==1)
+		{
+			var m=parseFloat(temp)+ parseFloat(results);
+		}
+		else if(adi==2)
+		{
+			var m=parseFloat(results)- parseFloat(temp);
+		}
+		else if(adi==3)
+		{
+			var m=parseFloat(temp)* parseFloat(results);
+		}
+		if(adi==4)
+		{
+			var m=parseFloat(results)/ parseFloat(temp);
+		}	
+		document.getElementById('result').value=m ;
+	}
+	results=document.getElementById('result').value;
+	adi=2;
+	document.getElementById('result').value='';
+}
+function equal()
+{
+	
+	var temp=document.getElementById('result').value;
+	var n = temp-parseFloat(results);
+	if(adi==1)
+	{
+		var m=parseFloat(temp)+ parseFloat(results);
+	}
+	else if(adi==2)
+	{
+		var m=parseFloat(results)- parseFloat(temp);
+	}
+	else if(adi==3)
+	{
+		var m=parseFloat(temp)* parseFloat(results);
+	}
+	if(adi==4)
+	{
+		var m=parseFloat(results)/ parseFloat(temp);
+	}	
+	document.getElementById('result').value=m ;
+	
+	
+}
+function can()
+{
+	document.getElementById('result').value='';
+}
+
+</script>
+
+</head>
+<!--<body background="267434.jpg">-->
+<body>
+
+<center><font color="red" size="7">Simple <font color="green" size="7" face="Algerian"><b><i><u>Calculator</u></i></b></font></font></center>
+<hr size="5" color="#000">
+<!--
+<marquee direction="down" height="100%"> Good Morning...!!! Aditya</marquee>
+<img src="267434.jpg" width="50%">-->
+
+<!--Heading -->
+<!--
+
+<h1>1</h1>
+<h2>2</h2>
+<h3>3</h3>
+<h4>4</h4>
+<h5>5</h5>
+<h6>6</h6> 
+
+-->
+ 
+
+
+<!--
+<table border="1" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr height="30">
+<th width="50">Sn</th><th width="100">Roll</th><th width="100">Name</th>
+</tr>
+<tr align="center">
+<td>1</td><td>1234</td><td>abc</td>
+</tr>
+<tr>
+<td align="center">2</td><td>4567</td><td>xyz</td>
+</tr>
+<tr>
+<td align="center">3</td><td>7890</td><td>cccc</td>
+</tr>
+<tr>
+<td align="center">4</td><td>0987</td><td>ppp</td>
+</tr>
+<tbody>
+</table> -->
+<br><br>
+<center>
+<table border="1"><tr align="center"><td width="10">
+<table border="0"> 
+<tbody> 
+<tr align="center">
+	<td colspan="3" align="right"> <input type="text" size="8" name="result" id="result" value=""></td>
+	<!--<td rowspan="4"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>-->
+	<td width="10"><button onclick="can()">C</button></td>
+</tr>
+<tr align="center">
+	<td width="10"><button onclick="one()">1</button></td><td width="10"><button onclick="two()">2</button></td><td width="10"><button onclick="three()">3</button></td><td width="20"><button onclick="multiply()">*</button></td>
+	
+</tr>
+<tr align="center">
+	<td width="10"><button onclick="four()">4</button></td><td width="10"><button onclick="five()">5</button></td><td width="10"><button onclick="six()">6</button></td><td width="20"><button onclick="divide()">/</button></td>
+</tr>
+<tr align="center">
+	<td width="10"><button onclick=" seven()">7</button ></td><td width="10"><button onclick="eight()">8</button></td><td width="10"><button onclick="nine()">9</button></td><td width="20"><button onclick="subtract()">-</button></td>
+</tr>
+<tr align="center">
+	<td width="10"><button onclick="add()">+</button ></td><td width="10"><button onclick="zero()">0</button ></td><td width="10"><button onclick="point()">.</button></td><td width="20"><button onclick="equal()">=</button></td>
+</tr>
+</tbody>
+</table></td></tr></table>
+</center>
+</body>
+</html>
